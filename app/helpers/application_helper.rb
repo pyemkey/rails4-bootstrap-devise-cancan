@@ -4,7 +4,7 @@ module ApplicationHelper
 		messages = resource.errors[:base].map {|msg| content_tah(:p, msg)}.join
 		html = <<-HTML
 		%div{class: "alert alert-error alert-block"}
-			%button.close{type: "button" "data-dismiss": "alert"}&#215;
+			%button.close{type: "button" "data-dismiss": "alert"} x
 			#{messages}
 		HTML
 		html.html_safe
